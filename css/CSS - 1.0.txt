@@ -1,0 +1,359 @@
+CSS = Cascading style sheet
+
+Syntax
+
+01)Selector
+
+Element selector
+{              
+property-value;
+}
+
+h1
+{
+color:red;
+}	
+
+ID selector
+#id
+{
+background-color:yellow;
+}	
+
+Class selector
+.class
+{
+color:blue;
+}
+
+02) Background and Foreground color
+body
+{
+background-color:yellow;
+}
+h1
+{
+color:red;
+}
+
+03) Font Family
+#serif
+{
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#san-serif
+{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#cursive
+{
+font-family: cursive;
+}
+#monospace
+{
+font-family: monospace;
+}
+#display
+{
+font-family: display;
+}
+           
+04) Font size
+h1{
+font-size: 200%;
+}
+
+05) Font weight
+h1
+{
+font-weight: normal;
+}
+p
+{
+font-weight:bold;
+}
+
+Font Style
+p{
+font-style:normal;
+}
+p{
+font-style:italic;
+}
+
+
+Text Transform
+p{
+text-transform: lowercase;
+}
+p{
+text-transform: uppercase;
+}
+p{
+text-transform: capitalize;
+} 
+
+
+Text Decoration
+a
+{
+text-decoration:none;
+}
+a
+{
+text-decoration:underline;
+}
+a
+{
+text-decoration:overline;
+}
+a
+{
+text-decoration:line-through;
+}
+
+Text decoration shorthand property
+// Three property
+p
+{
+text-decoration: underline overline line-through;
+}
+// Any two property
+p
+{
+text-decoration: overline underline;
+}
+
+Leading	
+p
+{
+line-height: 2;
+}
+
+Text alignment
+p
+{
+text-align: left;
+}
+p
+{
+text-align: right;
+}
+p
+{
+text-align : center;
+}
+p
+{
+text-align : justify;
+}
+
+
+Vertical Alignment
+span
+{
+vertical-align: top;
+}
+
+span
+{
+vertical-align: middle;
+}
+
+
+Kerning
+p
+{
+letter-spacing:5px;
+word-spacing: 1x5px;
+}
+
+Text-Indent
+p
+{
+text-indent: 5px;
+}
+
+Pseudo element
+h1::first-letter
+{
+font-size:200%;
+}
+p::first-line
+{
+font-color:green;
+}
+
+Pseudo Class
+a::link
+{
+color:red;
+}
+a::visited
+{
+color:blue;
+}
+a::hoever
+{
+color:yellow;
+}
+a::active
+{
+color:green;
+}
+a::focus
+{
+color:pink;
+}
+
+Also used pseudo class in input tag exception link and visited class <input type="submit">
+
+Text shadow
+left shadow
+p
+{
+text-shadow: 2px 0 0 yellow;
+}
+Right shadow
+p
+{
+text-shadow: -2px 0 0 yellow;
+}
+Top shadow
+p
+{
+text-shadow:0 -2px 0 yellow;
+}
+Bottom shadow
+p
+{
+text-shadow : 0 2px 0 yellow;
+}
+
+Shadow Blurring
+p
+{
+text-shadow: 0 2px 2px yellow;
+}
+
+Text shadow shorthand property
+p
+{
+text-shadow: 2px 2px 2px yellow;
+}
+
+Box Properties Introduction
+#wrapper
+{
+background-color: green;
+width: 95px;
+min-width : 40px;
+max-width : 1200px;
+height:100px;
+min-height:100px;
+max-height:120px;
+}
+
+Overflow
+Hidden
+#wrapper
+{
+max-width:1200px;
+height:200px;
+overflow:hidden;
+}
+
+Scroll
+{
+#wrapper
+max-width:1200px;
+height:200px;
+overflow:scroll;
+}
+
+Auto
+#wrapper
+{
+max-width:1200px;
+height:200px;
+overflow:auto;
+}
+
+overflow-x
+#wrapper
+{
+max-width:1200px;
+height:200px;
+overflow-x:auto;
+}
+
+overflow-y
+{
+max-width:1200px;
+height:200px;
+overflow-y:auto;
+}
+
+Border create
+#h1
+{
+border-width: 5px;
+border-style: solid;
+border-color:black;
+}
+
+Border shorthand property
+#h1
+{
+border:5px solid black;
+}
+
+Border four side mention separatly
+h1
+{
+border-top-width: thin;
+border-bottoom-width: thick;
+border-right-width:medium;
+border-left-width:5px;
+border-top-style:solid;
+border-bottom-style:dashed;
+border-right-style: double;
+border-left-style: ridge;
+border-top-color:black;
+border-bottom-color:green;
+border-right-color:red;
+border-left-color:orange;
+}
+
+Border shorthand property
+h1
+{
+border-width:thin thick medium 5px;
+border-style:solid dashed ridge double;
+b8 order-color:red green blue yellow;
+}
+
+
+Padding
+h1
+{
+padding:15px;
+/* Four side apply */
+padding: 15px 20px;
+/* 15px top & bottom - 10px right & left */
+padding: 15px 10px 5px;
+/* 15px top - 10px bottom - 5px right & left */
+padding: 20px 15px 10px 5px;
+/* 20px top - 15px bottm - 10px left - 5px right */
+}
+
+
+Margin
+h1
+{
+margin : 20px;
+margin:20px 15px;
+margin:20px 15px 10px;
+margin:20px 15px 10px 5px;
+}
+

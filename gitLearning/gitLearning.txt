@@ -1,0 +1,27 @@
+GIT 
+
+* git version
+* Signup in GitHub.com
+* Install Git
+* Linking Git to GitHub
+	---> git config --global user.name "rmurugan444"
+	---> git config --global user.email "rmurugan444@gmail.com"
+* Checking 
+	---> git config --list
+* Set Origin
+	---> git remote add origin https://github.com//rmurugan444/myLearning.git
+	---> git remote -v
+	---> git remote remove origin
+* git init
+* git status
+* git add readme.md | git add .
+* git commit -m "First Commit SuccessFull"
+* git commit -am "First Commit Successfull"
+* git log 
+* git log --oneline
+* git push -u origin master    
+* git commit --amend -m "amend message"
+
+
+
+

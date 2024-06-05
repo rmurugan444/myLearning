@@ -1,0 +1,544 @@
+Java Script 1.0
+
+Reference = Tamil Developer youtube channel
+
+ECMA = Europian Commputer Manufacturer Associations
+
+EcmaScript = Tells about standard of scripting language
+JavaScript = Scripting language implement ECMA Standard
+
+Embeded Script
+<script>
+</script>
+
+External Script
+<script src = "script.jss">
+
+Remove page rendering issue or Blocking JS
+	Embedd script tag in last line of body tag.
+
+script tag-a head-la kotukumpothu page rendering issue varum, itha thavirka script tag-a last line-la kotukalam. erupinum, anaytics purpose-kaka head la kotukalam
+
+Blocking JS or Remove page rendering issue - Regular use
+<html>
+<head><title>Blocking JS</title></head>
+<body>
+<p> Blocking JS or Remove page rendering </p>
+<script src="script.js">
+</body>
+</html>
+
+Analytics only
+<html>
+<head><title>Analytics only</title></head>
+<body>
+<p>Murugan Ravi</p>
+<p>My Blogging Website</p>
+<script src="script.js">
+</body>
+</html>
+
+No Script Tag
+	msg shows when js disable by users
+
+<noscript><h1> This webpage doesn't visible without disable javascript </h1></noscript>
+
+Identifier Rules
+	1) First letter should be in character or dollor sign or underscrore
+	2) other letter are contains numbers or charatere or dollor sign or underscrore
+	3) Space not allowed
+	4) reserved keywords or keywords should not used identifiers
+	5) camel case preffered
+
+javascript is a case sentitve language.
+
+Comments
+single line comment
+// This is a single line comment
+
+Multi line comment 
+/* This is a mulit line comment */
+
+Datatype
+	They are six data type available in javascript
+
+Primitve DataType
+1) Number
+2) String
+3) Boolean
+4) Null 
+5) Undefined
+
+Reference Datatype
+Object
+
+
+Variable declaration
+
+Int number
+var intNo = 10;
+console.log(intNo);
+
+Decimal Number
+var decNo = 10.25;
+console.log(decNo);
+
+Ocatal Number
+var octNo = 0o255;
+console.log(octNo);
+
+Hexadecimal Number 
+var HexaNo = 0x255;
+console.log(HexaNo);
+
+Exponential form
+var expNo = 1.1e6;    // 1.1 x 1000000
+console.log(expNo);
+
+String
+// Valid
+var name1 = "Murugan";
+var name2 = 'Murugan';
+console.log(name1);
+console.log(name2);
+
+// In-Valid
+var name = "Murugan';
+
+Boolean
+var yes = true;
+var no = false;
+console.log(yes);
+console.leg(no);
+
+Null
+var nullValue = null;
+console.log(nullValue);
+
+Undefined
+var undeNo;
+console.log(undeNo);
+
+
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+
+Operator
+Type_of operator
+
+console.log(typeof intNo);
+console.log(typeof decNo);
+console.log(typeof hexNo);
+console.log(typeof octNO);
+console.log(typeof expNo);
+console.log(typeof name1);
+console.log(typeof name2);
+console.log(typeof yes);
+
+
+
+console.log(typeof no);
+console.log(typeof nullValue);
+console.log(typeof undeNo);
+
+Arithmetic Operator
+
+var plus = 5+10;
+console.log(plus);
+var min = plus-5;
+console.log(min);
+var mul = min*2;
+console.log(mul);
+var div = mul/2;
+console.log(div);
+var modulo = div % 2;
+console.log(modulo);
+
+Increment Operator
+
+post-Increment operator
+var result = 6;
+result++;         		
+console.log(result);		// output 7
+var result = 6;
+var resultPost = result++ + 5;  
+console.log(resultPost);	// output 11
+
+Pre-Increment operator
+var result = 6;
+++result;
+console.log(result);            // output 7
+var result = 6;
+var resultPre = ++result + 5;  
+console.log(resultPre);		// output 12
+
+Decrement Operator
+
+post-Decrement operator
+var result = 6;
+result--;
+console.log(result); 		// output 5
+var result = 6;
+var resultPost = result-- + 5; 
+console.log(resultPost)		// output 11
+
+Pre-Increment operator
+var result = 6;
+--result;  
+console.log(result)		// output 5
+var result = 6;
+var resultPre = --result + 5;  
+console.log(resultPre);		// output 10
+
+Concatenation operator
+console.log("kutty " + 5);	// kutty 5
+console.log("kutty " + 5 + 10); // kutty 510
+first string apuram ethana integer value kotuthalum integer value add akathu string-a than output varum
+console.log("kutty " + (5+10)); // kutty 15
+console.log(5 + 10 + "kutty");  // 15 kutty
+
+
+NAN (Not a Number)
+console.log(10-"javascript");   // output NaN
+
+
+Relational Operator - return datatype boolean
+console.log(10>5);  	// output true
+console.log(10<5);	// output false
+console.log(10>=10);    // output true
+console.log(10<=10); 	// output true
+console.log(10==10); 	// output true
+console.log(10!=10); 	// output false
+
+type coercion
+console.log("10" = 10); // output true
+console.log("10" != 10) // output false
+
+break type coercion  
+console.log("10" === 10); // output false
+console.log("10" !== 10); // output true
+
+Logical Operator
+! (NOT)
+|| (OR)
+&& (AND)
+
+! (NOT) = Not Operator
+
+!(NOT) = convert to all datatype in boolean, truthly values convert to false, falsy values convert to true
+Truthly & Falsy Values
+Falsy values
+false, 0, ""(empty string), null, undefined, NaN
+
+Falsy values = output true
+console.log("0 = " + !0);  // true
+console.log("empty string = " + !"");  // true
+console.log("null = " + !null); // true
+console.log("NaN = " + !NaN); // true
+console.log("false = " + !false);  // true
+console.log("undefined = " + !undefined);  //true
+ 
+Truthly values = output false
+console.log("10 = " + !10);
+console.log("true = " + !true);
+console.log("Murugan Ravi = " + !"Murugan Ravi");
+console.log("-19 = " + !-19);
+console.log("c = " + !'c');
+console.log("15.5 = " + !15.5);
+
+We also store values in variables
+var result = !false;
+console.log(result);
+
+We also used If condition
+if(!false)
+console.log(false);
+
+Logical Operator (|| OR)
+Operand 1  Operand 2  result
+true	   true	      true
+true       false      true
+false      true       true
+false      false       false
+
+one result true another result false print truthly values
+console.log(0 || 10); // output 10
+console.log(false || true) // true
+console.log("" || "Murugan Ravi"); // Murugan Ravi
+console.log(null || -444);  // -444
+console.log('m' || NaN);  // m
+console.log(undefined || 15.7) // 15.7
+
+two result false print second result 
+console.log(null || 0);    // 0
+console.log(undefined || null); // null
+
+two result true print first result 
+console.log("Murugan Ravi" || "Kutty" );  // Murugan Ravi
+
+We also used vaiables instead of values
+var name1 = "Murugan Ravi";
+var name2 = "Kutty";
+var no = false;
+console.log(name1 || name2); // Murugan Ravi
+console.log(name1 || no); // Murugan Ravi
+console.log(no || no); // false
+
+We also used If condion
+var name1 = "Murugan Ravi";
+var name2 = "Kutty";
+var no = false;
+if(name1 || name2)
+console.log(name1 || name2); // Murugan Ravi
+if(name1 || no)
+console.log(name1 || no); // Murugan Ravi
+if(no || no)   // This statement not print because it's false
+console.log(no || no);
+ 
+Also used to store variables
+var name1 = "Murugan Ravi";
+var name2 = "Kutty";
+var result = name1 || name2;
+console.log(result);
+
+Logical Operator (|| AND)
+Operand 1  Operand 2  result
+true	   true	      true
+true       false      false
+false      true       false
+false      false      false
+
+one result true another result false print true values
+console.log(0 && 10); // 0
+console.log(false && true) // false
+console.log("" && "Murugan Ravi"); // 
+console.log(null && -444);  // null
+console.log('m' && NaN);  // NaN
+console.log(undefined && 15.7) // 
+
+two result false print first result
+console.log(null && 0);    // null
+console.log(undefined && null); // undefined
+
+two result true print first result 
+console.log("Murugan Ravi" && "Kutty" );  // kutty
+
+We also used vaiables instead of values
+var name1 = "Murugan Ravi";
+var name2 = "Kutty";
+var no = false;
+console.log(name1 && name2); // kutty
+console.log(name1 && no); // false
+console.log(no && no); // false
+
+We also used If condion
+var name1 = "Murugan Ravi";
+var name2 = "Kutty";
+var no = false;
+if(name1 && name2)
+console.log(name1 && name2); // kutty
+if(name1 && no) // This statement not print because it's false
+console.log(name1 && no); 
+if(no && no)   // This statement not print because it's false
+console.log(no && no);
+ 
+Also used to store variables
+var name1 = "Murugan Ravi";
+var name2 = "Kutty";
+var result = name1 && name2;
+console.log(result);  // kutty
+
+Ternary Operator
+var result = 18>=18? true : false;
+console.log(result);
+
+Compound Assign Operator
+var result = 5;
+result += 5;   // result = result + 5 
+console.log(result)	// 10
+result -=5;    // result = result -5 
+console.log(result)	// 
+result *= 5;  // result = result * 5
+cosole.log(result)	 // 25
+result /= 5;  // result = result / 5
+console.log(result)	 // 5 
+result %= 5   // result = result % 5 
+console.log(result)	// 0
+
+IF Condition
+var age = 16;
+var permission = true;
+if((age<=18 && permission) || true)
+console.log("IF Condition");
+
+Alert
+alert("This is alert message");
+
+Prompt
+var name = prompt("Enter your name", "admin");
+alert("Hello " + name);
+
+Confirm
+var name = confirm("Are you want to Exit");
+alert(name);
+
+
+Do While Loop
+
+Program
+// Roller coaster ride 
+do
+{
+var age = prompt("Enter your age", 18);
+if(age<18)
+{
+alert("Please Enter 18 above");
+}
+else if(age>=18)
+{
+var permission = confirm("Grant permission");
+if(permission)
+alert("You are allowed");
+else
+alert("You are not allowed");
+}
+}while(age<18)
+
+
+While Loop
+var no = 1;
+while(no<=5)
+{
+console.log(no);
+no++;
+}
+
+For Loop
+for(int i=0; i<=5; i++)
+console.log(i);
+
+Break and Continue with Switch Case
+var no = 1;
+switch(no)
+{
+case 1:
+alert("You enter 1");break;
+case 2:
+alert("You enter 2");break;
+case 3:
+alert("You enter 3");break;
+}
+
+Program
+var day = 8;
+switch(true)
+{
+case day<=6 && day>=1:
+console.log("working Days");break;
+case day>=6 && day<=7:
+console.log("Holliday");
+default:
+console.log('Please Enter 1 to 7');
+}
+
+Switch to work all datatype
+// string to use datatype
+switch("Murugan Ravi")
+{
+case "Murugan " + "Ravi":
+console.log("Murugan Ravi");
+break;
+default:
+console.log("Doesn't Matching");
+}
+
+// Character to use datatype
+switch("C")
+{
+case "C":
+console.log("C");
+break;
+default:
+console.log("Doesn't Matching");
+}
+
+// boolean to use datatype
+switch(true)
+{
+case true:
+console.log("You Enter True");
+break;
+default:
+console.log{"Doesn't Matching");
+}
+
+// Floating point 
+ switch(30.5)
+ {
+ case 15.5:
+ console.log("You Enter 15.5");break;
+ case 20.5:
+ console.log("Your Enter 20.5");break;
+ default:
+ console.log(" Doesn't match ");
+   }
+
+// 
+function 
+function add(no)
+{
+return no
+}
+
+var result = add(15);
+console.log(result);
+
+function add()
+{
+}
+
+function add(no)  // This method only called
+{
+console.log(no);
+}
+	
+add();	  // undefined
+add(15);  // 15
+
+Method overloading work akathu, niraya duplicate method create pannalam, method call panna kadaisi ya create panna method than call aghum
+
+Reference Type
+Object Creation
+
+var person = new Object();
+console.log(person instanceof Object); //true
+
+Property create and calling
+person.name = "Murugan";
+person.profile = "Entreperneur";
+
+console.log(person.name);
+console.log(person.profile);
+
+Method Create and Calling
+Method Create
+var person.method = function()
+{
+console.log("Muvi");
+}
+person.method();  // Muvi
+
+Primitive Datatype vs Reference Type
+Fixed 		-	Dynamic
+Store Stack	- 	Heap
+
+store value in Constructor when creating objects
+var output = {
+name : 'Murugan',
+profile : 'Entrepreneur',
+sayHi : function{
+console.log("Hello" + output.name);
+}
+}
+
+output.sayHi();
